@@ -1,0 +1,589 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Mack - Personal Portfolio HTML5 Template">
+    <meta name="description" content="Mack - Personal Portfolio HTML5 Template">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:title" content="Home 3">
+    <meta property="og:description" content="Mack - Personal Portfolio HTML5 Template">
+    <meta property="og:image" content="assets/img/preview-template/preview-template.png">
+    <title>Home </title>
+    <!-- Apple Favicon -->
+    <link rel="apple-touch-icon" href="{% static "assets/img/logo/favicon.svg"%}">
+    <!-- All Device Favicon -->
+    <link rel="icon" href="{% static "assets/img/logo/R.png"%}">
+    <!-- Icon -->
+    <link rel="stylesheet" href="{%static "assets/all-icons/myicon.css"%}">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="{% static "assets/css/bootstrap.min.css"%}">
+    <!-- Plugin -->
+    <link rel="stylesheet" href="{% static "assets/css/plugins.css"%}">
+    <!-- Style -->
+    <link rel="stylesheet" href="{% static "assets/css/style.min.css"%}">
+    <!-- Responsive -->
+    <link rel="stylesheet" href="{% static "assets/css/responsive.min.css"%}">
+</head>
+
+<body class="font-v3">
+    <div id="root">
+        <header>
+            <!-- Menu Bar Start -->
+            <div class="menu-bar v3">
+                <div class="container">
+                    <div class="menu-bar-content">
+                        <div class="menu-logo">
+                            <a href={% url 'home'%}>
+                                <img src="{% static "assets/img/logo/R.png"%}" alt="logo">
+                            </a>
+                        </div>
+                        <div class="menu-right">
+                            <nav class="main-menu">
+                                <ul>
+                                    <li><a href="#banner">Home</a>
+                                    </li>
+                                    <li><a href="#about-us" class="section-link">About Me</a>
+                                    </li>
+                                    <li><a href="#services" class="section-link">Services</a>
+                                    </li>
+                                    <li><a href="#project" class="section-link">Work</a>
+                                    </li>
+                                    <li><a href="#contact" class="section-link">Contact</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="mobile-menu-bar">
+                                <div class="mobile-menu-header">
+                                    <div class="mobile-logo">
+                                        <a href="index.html">
+                                            <img src="{% static "assets/img/logo/R.png"%}" alt="logo">
+                                        </a>
+                                    </div>
+                                    <button class="close-mobile-btn"><i class="my-icon icon-close"></i>
+                                    </button>
+                                </div>
+                                <div class="mobile-content">
+                                    <iframe class="w-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3634.5095000748684!2d88.62580237506616!3d24.363573164960872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fbefd0a55ea957%3A0x2f9cac3357d62617!2sRajshahi%20University%20of%20Engineering%20%26%20Technology(RUET)!5e0!3m2!1sen!2sbd!4v1739567060065!5m2!1sen!2sbd" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <div class="w-address">
+                                        <ul>
+                                            <li><i class="my-icon icon-location-dot"></i>
+                                                <p class="text-para-2 text-para-xl-1">Rajshahi University of Engineering & Technology,
+                                                    <br>Rajshahi, Bangladesh.</p>
+                                            </li>
+                                            <li><i class="my-icon icon-call"></i>
+                                                <p class="text-para-2 text-para-xl-1"><a href="tel:+88014420420">+880 1715457401</a>
+                                                </p>
+                                            </li>
+                                            <li><i class="my-icon icon-envelope-solid"></i>
+                                                <p class="text-para-2 text-para-xl-1"><a href="mailto:info.example@driller.com">nazrulislamrakib1813030@gmail.com</a>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <ul class="social-link">
+                                    <li><a href="https://www.facebook.com/nazrulislam.rakib?__cft__[0]=AZUyE3Ggmw2G6FL4Z4w-Re2m5JDALAhEFe2xBgQVndwt2a0fJDEspLv0mGOt4imTTKaCg_aJT6rLll7vgXgu95jyTxuN3GdWehDJzOBORMsLnZEnuztchRDRyMy5SJy6ONg1XKSjLfrYjifSkKeuN6b0_y8M1mURZFICZWTOao24cw&__tn__=-]C%2CP-R"><i class="my-icon icon-facebook"></i></a>
+                                    </li>
+                                    <li><a href="https://www.instagram.com/rak_kib_?igsh=YndnY3JidWJ6Mng5"><i class="my-icon icon-instagram"></i></a>
+                                    </li>
+                                    <li><a href="https://www.linkedin.com/in/nazrul-islam-rakib/"><i class="my-icon icon-linkedin-in"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="search-close"><i class="my-icon icon-close"></i>
+                            </button>
+                            <button class="search-option-open"><i class="my-icon icon-magnifying-glass"></i>
+                            </button>
+                            <form class="header-search" action="#">
+                                <input type="search" placeholder="Search here">
+                                <button type="submit"><i class="my-icon icon-magnifying-glass"></i>
+                                </button>
+                            </form>
+                            <button class="mobile-menu-btn"><span></span>  <span></span>  <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu Bar End -->
+        </header>
+        <main>
+            <!-- Banner Start -->
+            <section class="banner v3 pt-50 pb-50 pt-md-70 pb-md-70 pt-lg-100 pb-lg-100 pt-xl-213 pb-xl-213" id="banner">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 col-xl-4 order-lg-1">
+                            <div class="profile-img wow animate__zoomIn" data-wow-delay="'0.1s" data-wow-offset="20" data-wow-duration="0.8s">
+                                <img src="{% static "assets/img/banner/v3/rakib.jpg"%}" alt="profile">
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-xl-8">
+                            <div class="banner-content">
+                                <h4 class="text-4 text-medium">Hi There</h4>
+                                <h2 class="text-2 text-capital text-bold">I’m <span class="text-orange">Nazrul Islam Rakib</span></h2>
+                                <p class="text-para-1 text-medium">A professional Problem Solver and Software Engineering Enthusiast.</p>
+                                <ul class="all-btns mt-30 mt-xl-50">
+                                    <li><a href="#" class="link-anime v5 text-capital round-border-small">Download Resume</a>
+                                    </li>
+                                    <li><a href={% url 'home'%} class="link-anime v6 text-capital round-border-small">My Portfolio</a>
+                                    </li>
+                                </ul>
+                                <ul class="banner-social">
+                                    <li><a href="https://www.linkedin.com/in/nazrul-islam-rakib/">Linkedin</a>
+                                    </li>
+                                    <li><a href="https://github.com/TigerRakib">Github</a>
+                                    </li>
+                                    <li><a href="https://leetcode.com/u/TigerRakib/">LeetCode</a>
+                                    </li>
+                                    <li><a href="https://judge.beecrowd.com/en/profile/666550">beecrowd</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Banner End -->
+            <!-- Fun Facts Start -->
+            <section class="fun-facts v2 pt-50 pt-md-70 pt-xl-100 pt-xxl-130">
+                <div class="container">
+                    <ul class="fun-fact-content">
+                        <li class="wow animate__fadeInUp" data-wow-delay="0.1s" data-wow-offset="20" data-wow-duration="0.8s">
+                            <h3 class="text-3 text-semibold"><span class="counter" data-count-min="100" data-count-max="808" data-count-duration="1000" data-count-delay="100">5</span>+</h3>
+                            <p class="text-para-1 text-medium text-capital">Project Completed</p>
+                        </li>
+                        <li class="wow animate__fadeInUp" data-wow-delay="0.3s" data-wow-offset="20" data-wow-duration="0.8s">
+                            <h3 class="text-3 text-semibold"><span class="counter" data-count-min="100" data-count-max="525" data-count-duration="1000" data-count-delay="100">5</span>+</h3>
+                            <p class="text-para-1 text-medium text-capital">Positive Feedback</p>
+                        </li>
+                        <li class="wow animate__fadeInUp" data-wow-delay="0.5s" data-wow-offset="20" data-wow-duration="0.8s">
+                            <h3 class="text-3 text-semibold"><span class="counter" data-count-min="100" data-count-max="125" data-count-duration="1000" data-count-delay="100">5</span>+</h3>
+                            <p class="text-para-1 text-medium text-capital">Running Project</p>
+                        </li>
+                        <li class="wow animate__fadeInUp" data-wow-delay="0.1s" data-wow-offset="20" data-wow-duration="0.8s">
+                            <h3 class="text-3 text-semibold"><span class="counter" data-count-min="100" data-count-max="1231" data-count-duration="1000" data-count-delay="100">i</span>++</h3>
+                            <p class="text-para-1 text-medium text-capital">Cup Of Tea</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Fun Facts End -->
+            <!-- About Start -->
+            <section class="about-us v3 pt-50 pb-50 pt-md-70 pb-md-70 pt-xl-100 pb-xl-100 pb-xxl-130" id="about-us">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-xl-5">
+                            <div class="about-img wow animate__fadeInUp" data-wow-delay="0.1s" data-wow-offset="0" data-wow-duration="0.8s">
+                                <img src="{% static "assets/img/about/v3/about.jpg"%}" alt="profile-img">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-7">
+                            <div class="about-content">
+                                <div class="section-title v2">
+                                    <h2 class="text-2">Read About Me</h2>
+                                    <p class="text-para-1">An enthusiastic and dynamic programmer with a relentless curiosity for problem-solving, possessing a versatile proficiency in coding across various languages and platforms. I’m a detail-oriented and passionate individual, eager to constantly learn about real-world problem solving, taking responsibility, and helping to bring positive impacts on humanity.</p>
+                                </div>
+                                <ul class="skill-list">
+                                    <li>
+                                        <div class="my-progress-bar">
+                                            <p class="text-para-1">Git</p>
+                                            <div class="progress-vale" data-progress-min-width="0" data-progress-max-width="75" data-progress-duration="1400" data-progress-delay="100"><span class="counter" data-count-min="10" data-count-max="75" data-count-duration="1400" data-count-delay="100">75%</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="my-progress-bar">
+                                            <p class="text-para-1">Web Development</p>
+                                            <div class="progress-vale" data-progress-min-width="0" data-progress-max-width="60" data-progress-duration="1400" data-progress-delay="100"><span class="counter" data-count-min="10" data-count-max="60" data-count-duration="1400" data-count-delay="100">60%</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="my-progress-bar">
+                                            <p class="text-para-1">Problem Solving</p>
+                                            <div class="progress-vale" data-progress-min-width="0" data-progress-max-width="90" data-progress-duration="1400" data-progress-delay="100"><span class="counter" data-count-min="10" data-count-max="90" data-count-duration="1400" data-count-delay="100">90%</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="my-progress-bar">
+                                            <p class="text-para-1">Prototype</p>
+                                            <div class="progress-vale" data-progress-min-width="0" data-progress-max-width="65" data-progress-duration="1400" data-progress-delay="100"><span class="counter" data-count-min="10" data-count-max="65" data-count-duration="1400" data-count-delay="100">65%</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- About End -->
+            <!-- Services Start -->
+            <section class="services v3 pt-50 pb-50 pt-md-70 pb-md-70 pt-xl-100 pb-xl-100 pt-xxl-130 pb-xxl-130" id="services">
+                <div class="container">
+                    <div class="section-title-center v2">
+                        <h2 class="text-2">My Services</h2>
+                        <p class="text-para-1">I provide a wide range of optimum solutions that are designed to meet what you need and beyond your expectations.</p>
+                    </div>
+                    <div class="row justify-content-center mt-50 mt-xl-60">
+                        <div class="col-md-6 col-xl-4">
+                            <div class="services-card wow animate__fadeInUp" data-wow-delay="0.1s" data-wow-offset="20" data-wow-duration="0.8s">
+                                <div class="card-icon"><i class="my-icon icon-design-tool"></i>
+                                </div>
+                                <ul class="shap-bouns">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                                <h4 class="text-4">Team Leader</h4>
+                                <p class="text-para-1">My interest is developing smooth digital experiences that put user satisfaction first.</p><a href="#" class="serv-link"><i class="my-icon icon-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="services-card wow animate__fadeInUp" data-wow-delay="0.3s" data-wow-offset="20" data-wow-duration="0.8s">
+                                <div class="card-icon"><i class="my-icon icon-design-tool-2"></i>
+                                </div>
+                                <ul class="shap-bouns">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                                <h4 class="text-4">Web Development</h4>
+                                <p class="text-para-1">Build a unique and distinct website with a professional Web Developer.</p><a href="#" class="serv-link"><i class="my-icon icon-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="services-card wow animate__fadeInUp" data-wow-delay="0.5s" data-wow-offset="20" data-wow-duration="0.8s">
+                                <div class="card-icon"><i class="my-icon icon-design-page"></i>
+                                </div>
+                                <ul class="shap-bouns">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                                <h4 class="text-4">Data Analysis</h4>
+                                <p class="text-para-1">Unlock the gnot of your business with a proper Data Analyst.</p><a href="#" class="serv-link"><i class="my-icon icon-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="services-card wow animate__fadeInUp" data-wow-delay="0.1s" data-wow-offset="20" data-wow-duration="0.8s">
+                                <div class="card-icon"><i class="my-icon icon-brain"></i>
+                                </div>
+                                <ul class="shap-bouns">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                                <h4 class="text-4">Problem Solving</h4>
+                                <p class="text-para-1">I have solved around 500+ problems from different solving platforms.I love to do problem solving(real life problems are fun).</p><a href="#" class="serv-link"><i class="my-icon icon-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="services-card wow animate__fadeInUp" data-wow-delay="0.3s" data-wow-offset="20" data-wow-duration="0.8s">
+                                <div class="card-icon"><i class="my-icon icon-data-analytics"></i>
+                                </div>
+                                <ul class="shap-bouns">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                                <h4 class="text-4">Web Research</h4>
+                                <p class="text-para-1">Use professional Web Research services to start your next project with clarity and confidence.</p><a href="#" class="serv-link"><i class="my-icon icon-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="services-card wow animate__fadeInUp" data-wow-delay="0.5s" data-wow-offset="20" data-wow-duration="0.8s">
+                                <div class="card-icon"><i class="my-icon icon-analysis"></i>
+                                </div>
+                                <ul class="shap-bouns">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                                <h4 class="text-4">Project Analysis</h4>
+                                <p class="text-para-1">Embark on your next project with confidence and clarity by leveraging expert project analysis services.</p><a href="#" class="serv-link"><i class="my-icon icon-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Services End -->
+            <!-- Awesome Journey Start -->
+            <section class="awesome-journey v2 pt-50 pb-50 pt-md-70 pb-md-70 pt-xl-100 pb-xl-100 pt-xxl-130 pb-xxl-130">
+                <div class="container">
+                    <div class="section-title-center v2">
+                        <h2 class="text-2">My Journey</h2>
+                        <p class="text-para-1">My hectic Journey is a chapter I want to add to my portfolio, encapsulating brief anecdotes of my successes</p>
+                    </div>
+                    <ul class="awesome-journey-btns mt-50 mt-xl-60" role="tablist">
+                        <li>
+                            <button class="tab-btn btn-anime text-capital round-border-small v7 active" id="my-education-1-tab" data-bs-toggle="tab" data-bs-target="#my-education-1">My Education</button>
+                        </li>
+                        <li>
+                            <button class="tab-btn btn-anime text-capital round-border-small v7" id="my-experience-2-tab" data-bs-toggle="tab" data-bs-target="#my-experience-2">My Experience</button>
+                        </li>
+                        <li>
+                            <button class="tab-btn btn-anime text-capital round-border-small v7" id="awards-3-tab" data-bs-toggle="tab" data-bs-target="#awards-3">Awards</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content mt-50 mt-xl-60">
+                        <img class="shap-img-1" src="{% static "assets/img/awesome-journey/v2/object-img-1.png"%}" alt="shap-img-1">
+                        <img class="shap-img-2" src="{% static "assets/img/awesome-journey/v2/object-img-1.png"%}" alt="shap-img-2">
+                        <div class="tab-pane fade show active" id="my-education-1" tabindex="1">
+                            <ul class="journey-cards">
+                                <li class="wow animate__fadeInUp" data-wow-delay="0.1s" data-wow-offset="20" data-wow-duration="0.8s">
+                                    <h4 class="text-4">Bachelor of Science</h4>
+                                    <h6 class="text-6 text-orange text-medium">2018-2025 - Rajshahi University of Engineering & Technology</h6>
+                                    <p class="text-para-1">I have completed my Bachelor of Science in Materials Science & Engineering from Rajshahi University of Engineering & Technology.</p>
+                                </li>
+                                <li class="wow animate__fadeInUp" data-wow-delay="0.3s" data-wow-offset="20" data-wow-duration="0.8s">
+                                    <h4 class="text-4">Programming Languege</h4>
+                                    <h6 class="text-6 text-orange text-medium">2019-2020 - From Online Resources.</h6>
+                                    <p class="text-para-1">I have learnt different programming languages like C, Python, and JavaScript from different online platforms like Udemy and Coursera.</p>
+                                </li>
+                                <li class="wow animate__fadeInUp" data-wow-delay="0.1s" data-wow-offset="20" data-wow-duration="0.8s">
+                                    <h4 class="text-4">Data Structures and Algorithms</h4>
+                                    <h6 class="text-6 text-orange text-medium">2020-2021 - From Online Resources</h6>
+                                    <p class="text-para-1">I have learnt Data Structures and Algorithms from differnt online resources like Udemy and Coursera</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="my-experience-2" tabindex="1">
+                            <ul class="journey-cards">
+                                <li class="wow animate__fadeInUp" data-wow-delay="0.1s" data-wow-offset="20" data-wow-duration="0.8s">
+                                    <h4 class="text-4">Web Projects</h4>
+                                    <h6 class="text-6 text-orange text-medium">2024 - Present - Web development</h6>
+                                    <p class="text-para-1">I have completed several web projects, like web blogs-based application and to-do app using Django and Python. </p>
+                                </li>
+                                <li class="wow animate__fadeInUp" data-wow-delay="0.3s" data-wow-offset="20" data-wow-duration="0.8s">
+                                    <h4 class="text-4">Problem Solving Statistics</h4>
+                                    <h6 class="text-6 text-orange text-medium">2023-present -  Leetcode and beecrowd </h6>
+                                    <p class="text-para-1">I have solved 460 problems in Leetcode and 100+ in beecrowd.</p>
+                                </li>
+                                <li class="wow animate__fadeInUp" data-wow-delay="0.1s" data-wow-offset="20" data-wow-duration="0.8s">
+                                    <h4 class="text-4">Chief of Mechanical</h4>
+                                    <h6 class="text-6 text-orange text-medium">2022-2024 - Team Crack Platoon</h6>
+                                    <p class="text-para-1">Team Crack Platoon is the first formula-student team in Bangladesh.
+                                        I was designated as the head of Mechanical and completed the Formula Bharat 2024 a student car design competition as the only Bangladeshi team.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="awards-3" tabindex="1">
+                            <ul class="journey-cards">
+                                <li class="wow animate__fadeInUp" data-wow-delay="0.1s" data-wow-offset="20" data-wow-duration="0.8s">
+                                    <h4 class="text-4">Leetcode Awards</h4>
+                                    <h6 class="text-6 text-orange text-medium">6 Badges</h6>
+                                    <p class="text-para-1">I have achieved six badges in LeetCode, seeking more.</p>
+                                </li>
+                                <li class="wow animate__fadeInUp" data-wow-delay="0.3s" data-wow-offset="20" data-wow-duration="0.8s">
+                                    <h4 class="text-4">Formula Bharat 2024</h4>
+                                    <h6 class="text-6 text-orange text-medium">10th in Business Plan Event</h6>
+                                    <p class="text-para-1">In Formula Bharat Student Competition my team ranked 10th in business plan event.</p>
+                                </li>
+                                <li class="wow animate__fadeInUp" data-wow-delay="0.3s" data-wow-offset="20" data-wow-duration="0.8s">
+                                    <h4 class="text-4">Formula Student Switzerland 2023</h4>
+                                    <h6 class="text-6 text-orange text-medium">8th out of 22 teams</h6>
+                                    <p class="text-para-1">In Formula Student Switzerland Competition my team ranked 8th out of 22 teams.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Awesome Journey End -->
+            <!-- Latest Project Start -->
+            <section class="latest-project v3 pt-50 pb-50 pt-md-70 pb-md-70 pt-xl-100 pb-xl-100 pt-xxl-130 pb-xxl-130" id="project">
+                <div class="container">
+                    <div class="section-title-center v2">
+                        <h2 class="text-2">My Recent Works</h2>
+                        <p class="text-para-1">Welcome to the portfolio showcase of Rakib. Here, you'll find my recent projects.</p>
+                    </div>
+                    <div class="slider mt-50 mt-xl-60">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="project-card">
+                                    <div class="project-img">
+                                        <img src="{% static "assets/img/latest-project/hotel.jpg"%}" alt="pro-img">
+                                        <ul class="p-icon-link">
+                                            <li><a href="#"><i class="my-icon icon-eye"></i></a>
+                                            </li>
+                                            <li><a href="#"><i class="my-icon icon-heart"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="project-content">
+                                        <h4 class="text-4 text-bold text-capital"><a href="#">Hotel Booking Website</a></h4>
+                                        <p class="text-para-1">Completed on 15 Mar,2024</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="project-card">
+                                    <div class="project-img">
+                                        <img src="{% static "assets/img/latest-project/portfolio_p.jpg"%}" alt="pro-img">
+                                        <ul class="p-icon-link">
+                                            <li><a href="#"><i class="my-icon icon-eye"></i></a>
+                                            </li>
+                                            <li><a href="#"><i class="my-icon icon-heart"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="project-content">
+                                        <h4 class="text-4 text-bold text-capital"><a href="#">Portfolio Project</a></h4>
+                                        <p class="text-para-1">Completed on 25 Jan,2025</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="project-card">
+                                    <div class="project-img">
+                                        <img src="{% static "assets/img/latest-project/to_do.png" %}" alt="pro-img">
+                                        <ul class="p-icon-link">
+                                            <li><a href="#"><i class="my-icon icon-eye"></i></a>
+                                            </li>
+                                            <li><a href="#"><i class="my-icon icon-heart"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="project-content">
+                                        <h4 class="text-4 text-bold text-capital"><a href="#">To do app</a></h4>
+                                        <p class="text-para-1">Completed on 12 Dec,2024</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="project-card">
+                                    <div class="project-img">
+                                        <img src="{% static "assets/img/latest-project/iscea.jpg"%}" alt="pro-img">
+                                        <ul class="p-icon-link">
+                                            <li><a href="#"><i class="my-icon icon-eye"></i></a>
+                                            </li>
+                                            <li><a href="#"><i class="my-icon icon-heart"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="project-content">
+                                        <h4 class="text-4 text-bold text-capital"><a href="#">Dashboard for ISCEA Case competition</a></h4>
+                                        <p class="text-para-1">Completed on 25 July,2024</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="project-card">
+                                    <div class="project-img">
+                                        <img src="{% static "assets/img/latest-project/hotel.jpg"%}" alt="pro-img">
+                                        <ul class="p-icon-link">
+                                            <li><a href="#"><i class="my-icon icon-eye"></i></a>
+                                            </li>
+                                            <li><a href="#"><i class="my-icon icon-heart"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="project-content">
+                                        <h4 class="text-4 text-bold text-capital"><a href="#">Hotel book project</a></h4>
+                                        <p class="text-para-1">Completed on 15 Mar,2024</p>
+                                    </div>
+                                </div>
+                            </div>                         
+                            <div class="swiper-slide">
+                                <div class="project-card">
+                                    <div class="project-img">
+                                        <img src="{% static "assets/img/latest-project/to_do.png" %}" alt="pro-img">
+                                        <ul class="p-icon-link">
+                                            <li><a href="#"><i class="my-icon icon-eye"></i></a>
+                                            </li>
+                                            <li><a href="#"><i class="my-icon icon-heart"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="project-content">
+                                        <h4 class="text-4 text-bold text-capital"><a href="#">To do app</a></h4>
+                                        <p class="text-para-1">Completed on 12 Dec,2024</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-pagination"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- Latest Project End -->
+            <!-- Contact Start -->
+            <section class="contact v3 pt-50 pb-50 pt-md-70 pb-md-70 pt-xl-100 pb-xl-100 pt-xxl-130 pb-xxl-130" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="bg-img">
+                                <img src="{% static "assets/img/contact/v3/touch1.jpg"%}" alt="bg-img">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="'section-title v2">
+                                <h2 class="text-2 text-bold">Get In Touch</h2>
+                            </div>
+                            <form action={% url 'contact_me' %} method="post" role="form" class="contact-form mt-30 mt-xl-60">
+                                {% csrf_token %}
+                                <div class="group-form-box">
+                                    <div class="form-box">
+                                        <input name="name" id="name" type="text" placeholder="Name*" required>
+                                    </div>
+                                    <div class="form-box">
+                                        <input name="email" id="email" type="email" placeholder="Email*" required>
+                                    </div>
+                                </div>
+                                <div class="form-box">
+                                    <input name="subject" id="subject" type="text" placeholder="Subject*" required>
+                                </div>
+                                <div class="form-box">
+                                    <textarea name="message" id="message" placeholder="Message*" required></textarea>
+                                </div>
+                                <p class="text-para-2 text-para-xl-1 text-bold mt-30 mb-30 response"></p>
+                                <button class="btn-anime v5 text-capital round-border-small" type="submit">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact End -->
+        </main>
+        <footer>
+            <!-- Main Footer Start -->
+            <div class="main-footer v3 pt-25 pb-25">
+                <div class="container">
+                    <div class="footer-content">
+                        <div class="footer-logo">
+                            <a href="index.html">
+                                <img src="{% static "assets/img/logo/R.png"%}" alt="logo">
+                            </a>
+                        </div>
+                        <div class="footer-scroll">
+                            <button class="footer-scroll-Top"><span class="text-bold font-v3">Back To Top</span><i class="my-icon icon-angle-up"></i>
+                            </button>
+                        </div>
+                        <div class="footer-text">
+                            <h6 class="text-6">Copyright By <a href="#">@Rakib</a> - 2025</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="scroll-bottom-Top v3"><i class="my-icon icon-angle-up"></i>
+            </button>
+            <!-- Main Footer End -->
+        </footer>
+    </div>
+    <!-- jQuery -->
+    <script src="{% static "assets/js/jquery-3.7.1.min.js"%}"></script>
+    <!-- Bootstrap -->
+    <script src="{% static "assets/js/bootstrap.min.js"%}"></script>
+    <!-- Plugins -->
+    <script src="{% static "assets/js/plugins.js"%}"></script>
+    <!-- Index -->
+    <script src="{% static "assets/js/index.min.js"%}"></script>
+</body>
+
+</html>
