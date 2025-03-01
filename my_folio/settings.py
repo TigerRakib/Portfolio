@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-gcg)##z44&!#%2wbu09t9siv#=m@tpd7xgbb2&i=x4bgu5e0)q
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -122,6 +123,7 @@ USE_TZ = True
 
 
 STATIC_URL = "/static/"
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 
 # Default primary key field type
@@ -138,3 +140,4 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'nazrulislamrakib1813030@gmail.com'
 EMAIL_HOST_PASSWORD = "ouonwdogdmomdbro"
+STATICSTORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
